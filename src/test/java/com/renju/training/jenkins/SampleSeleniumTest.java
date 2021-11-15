@@ -41,7 +41,7 @@ public class SampleSeleniumTest {
 		System.out.println("Clicking Next button");
 		driver.findElement(By.xpath("//span[contains(text(),'Next')]")).click();
 		Thread.sleep(5000);
-		boolean textFound = driver.getPageSource().contains("Forgot password");
+		boolean textFound = driver.getPageSource().contains("Forgot password?");
 		AssertJUnit.assertTrue(textFound);
 	}
 	
