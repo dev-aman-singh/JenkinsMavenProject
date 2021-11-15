@@ -28,7 +28,9 @@ public class SampleSeleniumTest {
 	public void validateGoogleId() throws Exception {
 		System.out.println("Opening Browser");
 		driver.get("http://www.google.com");
-		driver.findElement(By.xpath("//*[@id=\"gbw\"]/div/div/div[1]/div[1]/a")).click();
+		//driver.findElement(By.xpath("//*[@id=\"gbw\"]/div/div/div[1]/div[1]/a")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'Gmail')]")).click();
+		//a[contains(text(),'Gmail')]
 		System.out.println("Clicking Gmail Link");
 		System.out.println("Clicking Sign In link");
 		driver.findElement(By.xpath("/html/body/nav/div/a[2]")).click();
