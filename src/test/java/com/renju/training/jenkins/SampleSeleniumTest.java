@@ -39,7 +39,7 @@ public class SampleSeleniumTest {
 		System.out.println("Entering username");
 		driver.findElement(By.xpath("//*[@id=\"identifierId\"]")).sendKeys("amansingh1031997");
 		System.out.println("Clicking Next button");
-		driver.findElement(By.xpath("//body/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/button[1]/div[2]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'Next')]")).click();
 		Thread.sleep(5000);
 		boolean textFound = driver.getPageSource().contains("Forgot password");
 		AssertJUnit.assertTrue(textFound);
