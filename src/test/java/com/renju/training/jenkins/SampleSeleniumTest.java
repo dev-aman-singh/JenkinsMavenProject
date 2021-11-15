@@ -33,7 +33,9 @@ public class SampleSeleniumTest {
 		//a[contains(text(),'Gmail')]
 		System.out.println("Clicking Gmail Link");
 		System.out.println("Clicking Sign In link");
-		driver.findElement(By.xpath("/html/body/nav/div/a[2]")).click();
+		//driver.findElement(By.xpath("/html/body/nav/div/a[2]")).click();
+		//a[contains(text(),'Sign in')]
+		driver.findElement(By.xpath("///a[contains(text(),'Sign in')]")).click();
 		System.out.println("Entering username");
 		driver.findElement(By.xpath("//*[@id=\"identifierId\"]")).sendKeys("amansingh1031997");
 		System.out.println("Clicking Next button");
